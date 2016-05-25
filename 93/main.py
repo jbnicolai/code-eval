@@ -2,4 +2,4 @@
 import fileinput
 
 for line in fileinput.input():
-    print(' '.join([s.capitalize() for s in line.strip().split() ]))
+    print(' '.join([s[0].upper() + s[1:] for s in line.strip().split() ]))
